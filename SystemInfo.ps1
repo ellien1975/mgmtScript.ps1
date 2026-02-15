@@ -1,6 +1,6 @@
 Import-Module ActiveDirectory
-$userName = ''
-$userPassword = ''
+$userName = 'korone'
+$userPassword = 'CHANGEME2023!'
 $psCreds = ConvertTo-SecureString $userPassword -AsPlainText -Force
 $Computers = New-Object -TypeName "System.Collections.ArrayList"
 $Computer = $(Get-ADComputer -Filter * | Select-Object Name)
